@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        header {
+            background-color: #343a40;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            height: 50px;
+            margin-right: 1rem;
+        }
+        header .logo span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #17a2b8;
+        }
+        .content {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #343a40;
+        }
+        .content h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #343a40;
+        }
+        .content p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: #343a40;
+        }
+        .accordion {
+            margin-bottom: 2rem;
+        }
+        .accordion-item {
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .accordion-header {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .accordion-header:hover {
+            background-color: #495057;
+        }
+        .accordion-content {
+            display: none;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+        }
+        footer {
+            background: #343a40;
+            padding: 1rem;
+            text-align: center;
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #17a2b8;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function toggleAccordionContent(event) {
+            const content = event.currentTarget.nextElementSibling;
+            const isActive = content.style.display === 'block';
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                item.style.display = 'none';
+            });
+            if (!isActive) {
+                content.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="clas.png" alt="Sentinel Logo">
+            <span>Sentinel Group</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="operations.html">Operations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Features of the Sentinel Group</h1>
+        <p>The Sentinel Group is at the forefront of intelligence, cybersecurity, and strategic planning. Explore the core capabilities that make us a premier team in addressing complex challenges and ensuring security worldwide.</p>
+
+        <h2>Core Capabilities</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordionContent(event)">
+                    Intelligence Analysis <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Sentinel Group excels in gathering and analyzing data from diverse sources to provide actionable insights. Our intelligence frameworks are designed to identify emerging threats and opportunities.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordionContent(event)">
+                    Cybersecurity Expertise <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Protecting critical infrastructure and sensitive data is our priority. With advanced tools and techniques, we secure networks from persistent threats and attacks.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordionContent(event)">
+                    Strategic Planning <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Our strategic planning team develops comprehensive responses to crises and long-term plans to safeguard national and organizational interests.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordionContent(event)">
+                    Real-World Simulations <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>We conduct scenario-based exercises to prepare teams for real-world challenges. These simulations enhance readiness and decision-making capabilities.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Top Operations</h2>
+        <ul>
+            <li><strong>OpShalom (2015):</strong> Coordinated efforts with Israeli defense forces to secure critical infrastructure and neutralize cyber threats during a period of heightened tensions.</li>
+            <li><strong>2023 NSA OS Development (2022):</strong> Designed and deployed a robust, secure operating system used by national security agencies to safeguard classified information.</li>
+            <li><strong>OpPsycho (2022):</strong> Successfully dismantled multiple dark web sites engaged in illicit activities, including trafficking and arms deals.</li>
+            <li><strong>OpMinuteman (2023):</strong> Developed an AI-driven threat detection system to identify and mitigate cyber threats in real time.</li>
+            <li><strong>OpSky (2024):</strong> Enhanced aerial reconnaissance capabilities for partner nations by integrating advanced analytics into drone operations.</li>
+        </ul>
+
+        <h2>Advanced Training Modules</h2>
+        <p>Participants in the Sentinel Group receive training in:</p>
+        <ul>
+            <li>Open-Source Intelligence (OSINT) Techniques</li>
+            <li>Geopolitical and Military Strategy</li>
+            <li>Counterintelligence Measures</li>
+            <li>Crisis and Conflict Response</li>
+            <li>Ethical Cyber Operations</li>
+        </ul>
+
+        <h2>Innovative Technology</h2>
+        <p>The Sentinel Group utilizes cutting-edge technology to enhance our capabilities. From advanced analytics platforms to AI-driven threat detection systems, we leverage the best tools available to stay ahead.</p>
+
+        <h2>Global Collaboration</h2>
+        <p>Collaboration is key to our success. The Sentinel Group works closely with government agencies, private organizations, and international partners to address global security challenges.</p>
+
+        <h2>Future Vision</h2>
+        <p>Looking ahead, the Sentinel Group is committed to expanding its capabilities, integrating new technologies, and fostering the next generation of leaders in intelligence and security. Join us in shaping a safer, smarter world.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sentinel Group | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

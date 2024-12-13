@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Sentinel Group</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        header {
+            background-color: #343a40;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            height: 50px;
+            margin-right: 1rem;
+        }
+        header .logo span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #17a2b8;
+        }
+        .content {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #343a40;
+        }
+        .content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .form-container label {
+            font-weight: bold;
+        }
+        .form-container input, .form-container textarea, .form-container select {
+            padding: 0.75rem;
+            border: 1px solid #ced4da;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+        .form-container button {
+            padding: 0.75rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #17a2b8;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #138496;
+        }
+        footer {
+            background: #343a40;
+            padding: 1rem;
+            text-align: center;
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #17a2b8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="clas.png" alt="Sentinel Logo">
+            <span>Sentinel Group</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="ops.html">Operations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Join the Mission</h1>
+        <p>Be a part of the Sentinel Group and contribute to a legacy of excellence in intelligence, strategy, and security. Our program is designed for dedicated individuals who are ready to challenge themselves and make a difference.</p>
+
+        <div class="form-container">
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="address">Full Address:</label>
+                <textarea id="address" name="address" rows="3" placeholder="Your full address" required></textarea>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+                <label for="education">Educational Background:</label>
+                <textarea id="education" name="education" rows="3" placeholder="Your educational qualifications" required></textarea>
+
+                <label for="work">Work Experience:</label>
+                <textarea id="work" name="work" rows="3" placeholder="Your work experience (if any)" required></textarea>
+
+                <label for="reference">References (Names and Contact Info):</label>
+                <textarea id="reference" name="reference" rows="3" placeholder="Provide at least two references" required></textarea>
+
+                <label for="interest">Area of Interest:</label>
+                <select id="interest" name="interest">
+                    <option value="intelligence-analysis">Intelligence Analysis</option>
+                    <option value="strategic-planning">Strategic Planning</option>
+                    <option value="geopolitical-research">Geopolitical Research</option>
+                    <option value="crisis-management">Crisis Management</option>
+                    <option value="simulation-design">Simulation Design</option>
+                </select>
+
+                <label for="background">Background Information:</label>
+                <textarea id="background" name="background" rows="5" placeholder="Include details about your personal and professional background" required></textarea>
+
+                <label for="security">Have you ever been involved in any legal issues or security incidents? If yes, explain:</label>
+                <textarea id="security" name="security" rows="3" placeholder="Provide details or state 'None'" required></textarea>
+
+                <label for="motivations">Why Do You Want to Join?</label>
+                <textarea id="motivations" name="motivations" rows="5" placeholder="Share your motivation" required></textarea>
+
+                <label for="skills">List Any Relevant Skills or Certifications:</label>
+                <textarea id="skills" name="skills" rows="3" placeholder="E.g., cybersecurity, foreign languages, technical skills" required></textarea>
+
+                <label for="travel">Have you traveled outside of your home country in the past 10 years? If yes, list the countries visited and purposes of travel:</label>
+                <textarea id="travel" name="travel" rows="3" placeholder="Provide details or state 'None'" required></textarea>
+
+                <label for="languages">List All Languages You Speak and Your Proficiency Level:</label>
+                <textarea id="languages" name="languages" rows="3" placeholder="E.g., English (fluent), Spanish (conversational)" required></textarea>
+
+                <label for="clearance">Do You Currently Hold Any Security Clearances? If yes, provide details:</label>
+                <textarea id="clearance" name="clearance" rows="3" placeholder="Provide details or state 'None'" required></textarea>
+
+                <label for="tech">Describe Your Technical Proficiency (Software, Programming, Hardware, etc.):</label>
+                <textarea id="tech" name="tech" rows="3" placeholder="E.g., Python programming, network configuration" required></textarea>
+
+                <label for="affiliations">List Any Professional Affiliations or Organizations You Are a Member Of:</label>
+                <textarea id="affiliations" name="affiliations" rows="3" placeholder="E.g., IEEE, Toastmasters" required></textarea>
+
+                <label for="health">Do You Have Any Physical or Mental Health Conditions That May Impact Your Participation? If yes, provide details:</label>
+                <textarea id="health" name="health" rows="3" placeholder="Provide details or state 'None'" required></textarea>
+
+                <label for="commitment">Are You Willing to Commit to Rigorous Training and Adhere to Confidentiality Agreements?</label>
+                <select id="commitment" name="commitment" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="criminal">Have You Ever Been Convicted of a Crime? If yes, explain:</label>
+                <textarea id="criminal" name="criminal" rows="3" placeholder="Provide details or state 'None'" required></textarea>
+
+                <label for="relocation">Are You Willing to Relocate for Assignments, if Necessary?</label>
+                <select id="relocation" name="relocation" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sentinel Group | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

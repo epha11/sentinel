@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Sentinel Group</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        header {
+            background-color: #343a40;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            height: 50px;
+            margin-right: 1rem;
+        }
+        header .logo span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #17a2b8;
+        }
+        .content {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #343a40;
+        }
+        .resources-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .resource-card {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            width: 300px;
+            text-align: center;
+        }
+        .resource-card h3 {
+            font-size: 1.5rem;
+            color: #343a40;
+            margin-bottom: 1rem;
+        }
+        .resource-card p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .resource-card a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #17a2b8;
+            padding: 0.5rem 1rem;
+            border-radius: 0.3rem;
+            transition: background-color 0.3s;
+        }
+        .resource-card a:hover {
+            background-color: #138496;
+        }
+        footer {
+            background: #343a40;
+            padding: 1rem;
+            text-align: center;
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #17a2b8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="clas.png" alt="Sentinel Logo">
+            <span>Sentinel Group</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="ops.html">Operations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Resources</h1>
+        <p>Explore our curated resources designed to enhance your skills, knowledge, and effectiveness in intelligence and strategic operations.</p>
+
+        <div class="resources-container">
+            <div class="resource-card">
+                <h3>Training Manuals</h3>
+                <p>Access comprehensive guides on intelligence gathering and strategic planning.</p>
+                <a href="training_manuals.pdf" target="_blank">View Manuals</a>
+            </div>
+            <div class="resource-card">
+                <h3>Case Studies</h3>
+                <p>Analyze real-world scenarios and learn from past operations and strategies.</p>
+                <a href="case_studies.html">Explore Case Studies</a>
+            </div>
+            <div class="resource-card">
+                <h3>Toolkits</h3>
+                <p>Download tools and software essential for intelligence and analysis work.</p>
+                <a href="toolkits.zip">Download Toolkits</a>
+            </div>
+            <div class="resource-card">
+                <h3>OSINT Platforms</h3>
+                <p>Links to open-source intelligence platforms and useful resources.</p>
+                <a href="osint_platforms.html">Visit OSINT Resources</a>
+            </div>
+            <div class="resource-card">
+                <h3>Workshops</h3>
+                <p>Details about upcoming workshops and training sessions.</p>
+                <a href="workshops.html">View Workshops</a>
+            </div>
+            <div class="resource-card">
+                <h3>Strategy Papers</h3>
+                <p>Read thought leadership papers on global security and military strategy.</p>
+                <a href="strategy_papers.html">Read Papers</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sentinel Group | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
